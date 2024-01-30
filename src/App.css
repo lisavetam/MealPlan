@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+Body{
+  Background: url(food.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
   }
+  h1{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #dcedf7;
+    border-radius: 20px;
+    padding: 15px;
+  }
+  .button-add{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #77cf40;
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+  }
+  .button-delete{
+    font-family: 'Montserrat', sans-serif;
+    background:none;
+    border:0;
+    font-size: 10px;
+    color:blue;
+
+  
+  }
+.App{
+display: flex;
+justify-content: space-around;
+}
+.whole-plan {
+width: 70%;
+height: 100vh;
+}
+.myInput {
+  width: 70%;
+  height: 20px;
+  padding: 10px;
+  border-radius: 20px;
+  display: block;
+  margin-top: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+textarea{
+  display: block;
+  border: 1px solid #ddd ;
+  margin-top: 30px;
+  width: 70%;
+  padding: 10px;
+  height: 200px;
+  border-radius: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+.selected {
+  background-color: #fad106;
+}
+.default{
+  background-color: #dcedf7;
+}
+p{
   color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+}
+.field{
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
 }
 
-.App-link {
-  color: #61dafb;
-}
+@media all and (max-width:500px) {
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  
+  .App{
+    display: flex;
+    justify-content: space-around;
+    }
+    .whole-plan {
+    width: 50%;
+   
+    }
+    .myInput {
+      width: 50%;
+      height: 15px;
+      padding: 10px;
+      border-radius: 12px;
+      display: block;
+      margin-top: 15px;
+    }
+    
+    textarea{
+      display: block;
+      margin-top: 30px;
+      width: 60%;
+      padding: 10px;
+      height: 100px;
+      border-radius: 15px;
+      font-family: 'Montserrat', sans-serif;
+    }
+  
+    p{
+   
+      font-size: 13px;
+    }
+    .field{
+    
+      font-size: 10px;
+    }
+
+
 }
